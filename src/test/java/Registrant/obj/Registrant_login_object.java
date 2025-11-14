@@ -201,7 +201,9 @@ public class Registrant_login_object extends Baseclass {
 		popupvalidate("OTP verification successful", "Please enter valid OTP.");
 
 		configWriter.setProperty("nameuser", SplitNameFromEmail(username));
-		//Clickelement(Registration_button);
+		Clickelement(Registration_button);
+		Thread.sleep(1000);
+		handleAlertIfPresent(driver);
 		Table_prop(Error_msgs, stv);
 		sendkeyweb(Register_number, "9856836589");
 		sendkeyweb(Register_username, SplitNameFromEmail(username));
@@ -285,7 +287,7 @@ public class Registrant_login_object extends Baseclass {
 		String captcha = myObj.nextLine();
 		System.out.println(captcha);
 		Clickelement(Next_button);
-		
+		Thread.sleep(3000);
 		popupvalidate("An OTP has been sent to your email.","Invalid Credentials");
 		System.out.println("Enter OTP:");
 		String OTP = myObj.nextLine();
@@ -607,11 +609,11 @@ public void user_enters(String UN, String Password) throws InterruptedException 
 	public WebElement org_upload;
 	@FindBy(xpath = "//select[@formcontrolname='countryCode']")
 	public WebElement selectcountry;
-	@FindBy(xpath = "(//select[@class='real-select'])[2]")
+	@FindBy(xpath = "(//select[@formcontrolname='adminAltCountryCode'])")
 	public WebElement selectcountry1;
-	@FindBy(xpath = "(//select[@class='real-select'])[3]")
+	@FindBy(xpath = "(//select[@formcontrolname='techAltCountryCode'])")
 	public WebElement selectcountry2;
-	@FindBy(xpath = "(//select[@class='real-select'])[4]")
+	@FindBy(xpath = "(//select[@formcontrolname='billAltCountryCode'])")
 	public WebElement selectcountry3;
 	
 	
@@ -647,7 +649,7 @@ public void user_enters(String UN, String Password) throws InterruptedException 
 		sendkeyweb(org_name, Name);
 		sendkeyweb(org_pin, PIN);
 		sendkeyweb(org_address, Address);
-		sendkeyweb(STD_Code," 040 ");
+		sendkeyweb(STD_Code,"040");
 		sendkeyweb(org_telephone, Tel);
 		Selectdropdown(selectcountry," India -(+91) ");
 		sendkeyweb(org_number, Mob);

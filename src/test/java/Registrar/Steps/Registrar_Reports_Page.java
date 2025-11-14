@@ -55,10 +55,10 @@ public class Registrar_Reports_Page {
 		
 	}
 	
-	@Then("Registrar Delete Registrant Domain Application Oraphandata")
-	public void Registrar_Delete_Registrar_Orphandata() throws Exception  {
+	@Then("Registrar Delete Registrant Domain Application Oraphandata {string}")
+	public void Registrar_Delete_Registrar_Orphandata(String useremailid) throws Exception  {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
-		RRO.Registrar_Delete_Registrar_Orphandata();
+		RRO.Registrar_Delete_Registrar_Orphandata(useremailid);
 		
 	}
 	

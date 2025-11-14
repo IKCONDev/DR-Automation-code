@@ -283,7 +283,12 @@ WebElement Orgname1=driver.findElement(By.xpath("//td[normalize-space()='"+Confi
 		
 		sendkeyweb(orphanSearchclick, ConfigReader.getProperty("domain"));
 		try {
-			Clickelement(deletebtn);
+			
+			Clickelement(suredeletebtn);
+			
+			handleAlertIfPresent(driver);
+			Thread.sleep(5000);
+			handleAlertIfPresenttwo(driver);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -353,13 +358,13 @@ public List<WebElement> userdeletebutton ;
 
 @FindBy(xpath="//table[@id='table1']//tr//th")
 public List<WebElement> tabledataepp ;
-public void Registrar_Delete_Registrar_Orphandata() throws Exception {
+public void Registrar_Delete_Registrar_Orphandata(String useremailid) throws Exception {
 	
 Clickelement(ClickReports);
 	
 	Clickelement(Clickusersorphandata);
 	
-	sendkeyweb(Searchreportsentity1, ConfigReader.getProperty("OrgName"));
+	sendkeyweb(Searchreportsentity1, useremailid);
 	
 	String Apptableextvalues="ID,User ID,Created Date Time,User Name,Mobile Number,Organisation ID,Actions";
 	Table_prop(Tabledata1, Apptableextvalues);

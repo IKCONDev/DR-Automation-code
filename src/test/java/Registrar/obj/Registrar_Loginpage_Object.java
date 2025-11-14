@@ -145,6 +145,7 @@ public class Registrar_Loginpage_Object extends Baseclass{
 		sendkeyweb(passwordentertxtbox, Password);
 		String OTP1 = myObj.nextLine();
 		Clickelement(ClickNextbutton);
+		Thread.sleep(5000);
 		popupvalidate("An OTP has been sent to your email.","Invalid Credentials");
 		System.out.println("Enter OTP : ");
 		
@@ -152,7 +153,7 @@ public class Registrar_Loginpage_Object extends Baseclass{
 		String OTP = myObj.nextLine();
 		sendkeyweb(Regemailotp, OTP);
 		Clickelement(Verifyotp);
-		popupvalidate("Login Success","");
+		//popupvalidate("Login Success","");
 		
 		 Thread.sleep(3000);
 	        

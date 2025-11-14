@@ -266,9 +266,9 @@ public WebElement Deleteapp;
 
 public void Registrar_Can_Check_in_Applications_Page() throws Exception{
 	Clickelement(Appsearch);
-	//sendkeyweb(Appsearchsend, ConfigReader.getProperty("OrgName"));
+	sendkeyweb(Appsearchsend, ConfigReader.getProperty("OrgName"));
 	Thread.sleep(2000);
-	sendkeyweb(Appsearchsend, "daaanidr.bank.in");
+	//sendkeyweb(Appsearchsend, "daaanidr.bank.in");
 	
 	Clickelement(Deleteapp);
 	
