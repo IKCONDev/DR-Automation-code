@@ -382,8 +382,8 @@ public void user_enters(String UN, String Password) throws InterruptedException 
 			popupvalidate("Login Successful","Fetched tokens successfully");
 		} catch (Exception e) {
 		}
-		Thread.sleep(10000);
-		handleAlertIfPresent(driver);
+	//	Thread.sleep(10000);
+	//	handleAlertIfPresent(driver);
 		Selectdropdown(DSC_token, "1");
 		Selectdropdown(DSC_certificate, "1");
 		sendkeyweb(DSC_password, "Idrbt@123");

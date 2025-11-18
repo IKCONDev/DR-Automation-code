@@ -11,7 +11,7 @@ Feature: Registrant Onboarding purpose Registrant Registration
 
     Examples: 
       | username                 | password | Case  |
-      | ajaydevgan.b.v@ikcon.com | Test@129 | Valid |
+      | ajaydevgan.c.v@ikcon.com | Test@129 | Valid |
 
   Scenario Outline: DSC Verify
     And User enters the dsc details
