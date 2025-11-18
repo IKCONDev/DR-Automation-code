@@ -22,7 +22,7 @@ Feature: Registrant-Search-Domain-and-logout-then-Registrar-check-Registrant-Unc
 
     Examples: 
       | domain    |
-      | ajaydevdr |
+      | ajaydevddr |
 
   Scenario Outline: Registrar Login Page
     Given Registrar is on Landing Page1
@@ -42,4 +42,4 @@ Feature: Registrant-Search-Domain-and-logout-then-Registrar-check-Registrant-Unc
 
    Examples: 
       | domain    |
-      | ajaydevdr |
+      | ajaydevddr |

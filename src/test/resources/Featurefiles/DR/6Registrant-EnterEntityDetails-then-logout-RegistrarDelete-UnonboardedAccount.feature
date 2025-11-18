@@ -11,7 +11,7 @@ Feature: Registrant-Enter-Entity-Details-and-logout-then-Registrar-Delete-Regist
 
     Examples: 
       | username               | password | Case  |
-      | ajaydevgan.d@ikcon.com | Test@129 | Valid |
+      | ajaydevgan.e@ikcon.com | Test@129 | Valid |
 
   Scenario Outline: DSC Verify
     And User enters the dsc details
@@ -52,7 +52,7 @@ Feature: Registrant-Enter-Entity-Details-and-logout-then-Registrar-Delete-Regist
 
     Examples: 
       | username               | password | Case  |
-      | ajaydevgan.d@ikcon.com | Test@129 | Valid |
+      | ajaydevgan.e@ikcon.com | Test@129 | Valid |
 
   Scenario Outline: Registrant Registration and login
     Given User is on Landing Page
@@ -64,7 +64,7 @@ Feature: Registrant-Enter-Entity-Details-and-logout-then-Registrar-Delete-Regist
 
     Examples: 
       | username            | password | Case  |
-      | bighman.w@ikcon.com | Test@129 | Valid |
+      | bighman.k@ikcon.com | Test@129 | Valid |
 
   Scenario Outline: DSC Verify
     And User enters the dsc details
@@ -75,7 +75,7 @@ Feature: Registrant-Enter-Entity-Details-and-logout-then-Registrar-Delete-Regist
 
     Examples: 
       | domain    | PIN    | Address                                  | Tel    | Mob       | Email  | GST             | PAN        | License               |
-      | bihmanwdr | 500090 | CYBERTOWERS,Madhapur,HEDERABAD,Telangana | 968557 | 868557894 | ikcon@ | 22ABCDE0000A1J5 | ASDEE4455Q | L12345MH2023PLC000001 |
+      | bihmatwdr | 500090 | CYBERTOWERS,Madhapur,HEDERABAD,Telangana | 968557 | 868557894 | ikcon@ | 22ABCDE0000A1J5 | ASDEE4455Q | L12345MH2023PLC000001 |
 
   Scenario Outline: Registrant Officer Details Management
     Then User logout the application
@@ -105,4 +105,4 @@ Feature: Registrant-Enter-Entity-Details-and-logout-then-Registrar-Delete-Regist
 
     Examples: 
       | username            | password | Case  |
-      | bighman.w@ikcon.com | Test@129 | Valid |
+      | bighman.k@ikcon.com | Test@129 | Valid |

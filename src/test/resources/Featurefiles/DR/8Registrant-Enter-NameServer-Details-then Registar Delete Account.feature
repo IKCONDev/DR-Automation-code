@@ -22,7 +22,7 @@ Feature: Registrant-Enter-NameServer-Details-and-logout-then Registrar-Delete-Re
 
     Examples: 
       | domain      | PIN    | Address                                  | Tel    | Mob       | Email  | GST             | PAN        | License               |
-      | chandirkcdr | 500090 | CYBERTOWERS,Madhapur,HEDERABAD,Telangana | 968557 | 868557894 | ikcon@ | 22ABCDE0000A1J5 | ASDEE4455Q | L12345MH2023PLC000001 |
+      | chandirkrdr | 500090 | CYBERTOWERS,Madhapur,HEDERABAD,Telangana | 968557 | 868557894 | ikcon@ | 22ABCDE0000A1J5 | ASDEE4455Q | L12345MH2023PLC000001 |
 
   Scenario Outline: Admin Contact details
     Then User enters admin contact details "<Name>" "<Tel>" "<Mob>" "<Email>" "<Aadhar>" "<PAN>" "<Desig>"
@@ -50,7 +50,7 @@ Feature: Registrant-Enter-NameServer-Details-and-logout-then Registrar-Delete-Re
 
     Examples: 
       | NS1     | IP1       | IPV6       |
-      | Office1 | 99.26.33. | 2399:db6:: |
+      | Office1 | 99.27.33. | 2799:db6:: |
 
   Scenario Outline: Registrant Officer Details Management
     Then User logout the application

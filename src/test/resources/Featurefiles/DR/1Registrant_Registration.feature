@@ -1,6 +1,6 @@
-Feature: Registrant Onboarding purpose Registration
+Feature: Registrant Onboarding purpose Registrant Registration
 
-@1Registrant-complete-Registration-and-logout-then @Registrant-Delete--OrphanData-Account.1
+  @1Registrant-complete-Registration-and-logout-then @Registrant-Delete--OrphanData-Account.1
   Scenario Outline: Registrant-complete-Registration-and-logout-then-Registrant-Delete--OrphanData-Account.
     Given User is on Landing Page
     Then User validating the Landing Page
@@ -10,8 +10,8 @@ Feature: Registrant Onboarding purpose Registration
     Then User enters "<username>" and "<password>"
 
     Examples: 
-      | username               | password | Case  |
-      | ajaydevgan.a@ikcon.com | Test@129 | Valid |
+      | username                 | password | Case  |
+      | ajaydevgan.b.v@ikcon.com | Test@129 | Valid |
 
   Scenario Outline: DSC Verify
     And User enters the dsc details

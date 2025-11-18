@@ -1,4 +1,4 @@
-Feature: Registrant Registred then Self Delete Account
+Feature: Registrant Registred but not unboarded then Self Delete Account
 
   @1Registrant-complete-Registration-and-logout-then @Registrant-Delete--OrphanData-Account.1
   Scenario Outline: Registrant-complete-Registration-and-logout-then-Registrant-Delete--OrphanData-Account.
@@ -11,7 +11,7 @@ Feature: Registrant Registred then Self Delete Account
 
     Examples: 
       | username               | password | Case  |
-      | ajaydevgan.b@ikcon.com | Test@129 | Valid |
+      | ajaydevgan.d@ikcon.com | Test@129 | Valid |
 
   Scenario Outline: DSC Verify
     And User enters the dsc details
@@ -28,7 +28,7 @@ Feature: Registrant Registred then Self Delete Account
 
      Examples: 
       | username               | password | Case  |
-      | ajaydevgan.b@ikcon.com | Test@129 | Valid |
+      | ajaydevgan.d@ikcon.com | Test@129 | Valid |
 
   Scenario Outline: Registrar Login Page
     Given Registrar is on Landing Page1
@@ -48,4 +48,4 @@ Feature: Registrant Registred then Self Delete Account
 
     Examples: 
       | useremail              |
-      | ajaydevgan.b@ikcon.com |
+      | ajaydevgan.d@ikcon.com |

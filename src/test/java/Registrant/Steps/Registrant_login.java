@@ -88,7 +88,7 @@ public class Registrant_login {
 	}
 
 	@Then("User enters the dsc details")
-	public void message_displayed_login_successfully() throws InterruptedException {
+	public void message_displayed_login_successfully() throws Throwable  {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		RLO.DSC_token();
 		RLO.DSC_token2();
@@ -151,7 +151,7 @@ public class Registrant_login {
 	}
 	
 	@Then("User preview and submit onboarding")
-	public void User_preview_and_submit_onboarding() throws AWTException, InterruptedException {
+	public void User_preview_and_submit_onboarding() throws Throwable {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		RLO.User_preview_and_submit_onboarding();
 		

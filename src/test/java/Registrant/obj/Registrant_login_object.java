@@ -345,7 +345,7 @@ public void user_enters(String UN, String Password) throws InterruptedException 
 		validatetext(Passowrd_label, "Password");
 		validateattribute(Signin_email, "placeholder", "Enter your email");
 		validateattribute(Signin_password, "placeholder", "Enter your password");
-		Clickelement(Next_button);
+		//Clickelement(Next_button);
 		validatetext(Forget_password,"Forgot password?");
 		//popupvalidate("Login Successful", "");
 	}
@@ -373,12 +373,17 @@ public void user_enters(String UN, String Password) throws InterruptedException 
 	@FindBy(xpath = "//button[normalize-space()='Proceed with DSC']")
 	public WebElement Proceedwithdsc;
 	
-	public void DSC_token() throws InterruptedException {
+	public void DSC_token() throws Throwable {
+
 		try {
 			Clickelement(Proceedwithdsc);
+		
+			
 			popupvalidate("Login Successful","Fetched tokens successfully");
 		} catch (Exception e) {
 		}
+		Thread.sleep(10000);
+		handleAlertIfPresent(driver);
 		Selectdropdown(DSC_token, "1");
 		Selectdropdown(DSC_certificate, "1");
 		sendkeyweb(DSC_password, "Idrbt@123");
@@ -573,6 +578,7 @@ public void user_enters(String UN, String Password) throws InterruptedException 
 		ac.scrollByAmount(0, 500).build().perform();
 		Thread.sleep(3000);
 		clickmultipleweb(Save_next);
+		//Alert Present or No Alert present purpose use try catch block on this place.
 		try {
 			driver.switchTo().alert().accept();
 		} catch (Exception e) {
@@ -1071,7 +1077,7 @@ public void user_enters(String UN, String Password) throws InterruptedException 
 	@FindBy(xpath = "//button[normalize-space()='Track Your Application']")
 	public WebElement track_appbutton;
 	
-	public void User_preview_and_submit_onboarding() throws InterruptedException {
+	public void User_preview_and_submit_onboarding() throws Throwable {
 		
 		Thread.sleep(5000);
 		clickmultipleweb(Preview_check);

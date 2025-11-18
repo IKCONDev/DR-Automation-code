@@ -355,7 +355,7 @@ public class Baseclass {
 	
 	
 	public void handleAlertIfPresent(WebDriver driver) throws Exception {
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.alertIsPresent());
 		Alert alert = driver.switchTo().alert();
 		System.out.println("Alert message: " + alert.getText());

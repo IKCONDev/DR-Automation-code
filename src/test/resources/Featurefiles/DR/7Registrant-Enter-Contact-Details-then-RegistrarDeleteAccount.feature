@@ -11,7 +11,7 @@ Feature: Registrant-Enter-Contact-Details-and-logout-then-Registrar-Delete-Regis
 
     Examples: 
       | username               | password | Case  |
-      | chandirika.U@ikcon.com | Test@129 | Valid |
+      | chandirika.w@ikcon.com | Test@129 | Valid |
 
   Scenario Outline: DSC Verify
     And User enters the dsc details
@@ -22,7 +22,7 @@ Feature: Registrant-Enter-Contact-Details-and-logout-then-Registrar-Delete-Regis
 
     Examples: 
       | domain        | PIN    | Address                                  | Tel    | Mob       | Email  | GST             | PAN        | License               |
-      | chandirikaudr | 500090 | CYBERTOWERS,Madhapur,HEDERABAD,Telangana | 968557 | 868557894 | ikcon@ | 22ABCDE0000A1J5 | ASDEE4455Q | L12345MH2023PLC000001 |
+      | chandirikawdr | 500090 | CYBERTOWERS,Madhapur,HEDERABAD,Telangana | 968557 | 868557894 | ikcon@ | 22ABCDE0000A1J5 | ASDEE4455Q | L12345MH2023PLC000001 |
 
   Scenario Outline: Admin Contact details
     Then User enters admin contact details "<Name>" "<Tel>" "<Mob>" "<Email>" "<Aadhar>" "<PAN>" "<Desig>"
@@ -73,4 +73,4 @@ Feature: Registrant-Enter-Contact-Details-and-logout-then-Registrar-Delete-Regis
 
     Examples: 
       | username               | password | Case  |
-      | chandirika.U@ikcon.com | Test@129 | Valid |
+      | chandirika.w@ikcon.com | Test@129 | Valid |
